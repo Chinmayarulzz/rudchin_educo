@@ -413,7 +413,7 @@ body {
 				<ul id="da-thumbs" class="da-thumbs">
 					<li>
 						<a href="http://dribbble.com/shots/505046-Menu">
-							<img src="images/video1.png" />
+							<img src="<?=base_url()?>assets/images/video1.png" />
 							<div><span>Menu by Simon Jensen</span></div>
 							<div class="btns" style="display:flex;">
 								<button class="btn btn-edit">EDIT</button>
@@ -423,7 +423,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/504336-TN-Aquarium">
-							<img src="images/video2.png" />
+							<img src="<?=base_url()?>assets/images/video2.png" />
 							<div><span>TN Aquarium by Charlie Gann</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -434,7 +434,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/504197-Mr-Crabs">
-							<img src="images/video3.png" />
+							<img src="<?=base_url()?>assets/images/video3.png" />
 							<div><span>Mr. Crabs by John Generalov</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -445,7 +445,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-							<img src="images/video4.png" />
+							<img src="<?=base_url()?>assets/images/video4.png" />
 							<div><span>Gallery of Mo 2.Mo logo by Adam Campion</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -456,7 +456,7 @@ body {
 					</li>
 					<li>	
 						<a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
-							<img src="images/video5.png" />
+							<img src="<?=base_url()?>assets/images/video5.png" />
 							<div><span>Ice Cream - nom nom by Eight Hour Day</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -467,7 +467,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/502927-My-Muse">
-							<img src="images/video6.png" />
+							<img src="<?=base_url()?>assets/images/video6.png" />
 							<div><span>My Muse by Zachary Horst</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -478,7 +478,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
-							<img src="images/video7.png" />
+							<img src="<?=base_url()?>assets/images/video7.png" />
 							<div><span>Natalie & Justin Cleaning by Justin Younger</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -489,7 +489,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/502523-App-Preview">
-							<img src="images/video8.png" />
+							<img src="<?=base_url()?>assets/images/video8.png" />
 							<div><span>App Preview by Ryan Deshler</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -500,7 +500,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/501695-Cornwall-Map">
-							<img src="images/video9.png" />
+							<img src="<?=base_url()?>assets/images/video9.png" />
 							<div><span>Cornwall Map by Katharina Maria Zimmermann</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -511,7 +511,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/500861-final-AD-logo">
-							<img src="images/video10.png" />
+							<img src="<?=base_url()?>assets/images/video10.png" />
 							<div><span>final AD logo by Annette Diana</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -522,7 +522,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/500369-Land-Those-Planes">
-							<img src="images/video11.png" />
+							<img src="<?=base_url()?>assets/images/video11.png" />
 							<div><span>Land Those Planes by Lee Ann Marcel</span></div>
 							<div class="btns" style="display:flex;">
 								
@@ -533,7 +533,7 @@ body {
 					</li>
 					<li>
 						<a href="http://dribbble.com/shots/497795-Seahorse">
-							<img src="images/video12.png" />
+							<img src="<?=base_url()?>assets/images/video12.png" />
 							<div><span>Seahorse by Trevor Basset</span></div>
 							<div class="btns" style="display:flex;">
 								
