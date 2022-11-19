@@ -116,7 +116,7 @@
           <div class="col-md-8">
             <section class='tabs-content'>
               <article id='tabs-1'>
-                <img src="images/blog-image-1-940x460.jpg" alt="">
+                <img src="<?=base_url()?>assets/images/blog-image-1-940x460.jpg" alt="">
                 <h4><a href="blog-details.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
                 <div style="margin-bottom:10px;">
                   <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
@@ -133,7 +133,7 @@
               <br>
 
               <article id='tabs-2'>
-                <img src="images/blog-image-2-940x460.jpg" alt="">
+                <img src="<?=base_url()?>assets/images/blog-image-2-940x460.jpg" alt="">
                 <h4><a href="blog-details.html">Mauris lobortis quam id dictum dignissim</a></h4>
                 <div style="margin-bottom:10px;">
                   <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
