@@ -169,17 +169,17 @@ his level and help him if you can. He must grow.
           <div class="col-md-8">
             <section class='tabs-content'>
               <article id='tabs-1'>
-                <img src="images/blog-image-1-940x460.jpg" alt="">
+                <img src="<?=base_url()?>assets/images/blog-image-1-940x460.jpg" alt="">
                 <h4><a href="blog-details.html">Silicon Valley layoffs aren’t just a cost-cutting measure. They’re a culture reset.</a></h4>
                 <p>Meta CEO Mark Zuckerberg cut 11,000 employees, or 13 percent of Facebook. Amazon has confirmed plans to slash as many as 10,000 corporate and tech jobs. Lyft. Robinhood. Stripe. Netflix. Coinbase. </p>
               </article>
               <article id='tabs-2'>
-                <img src="images/blog-image-2-940x460.jpg" alt="">
+                <img src="<?=base_url()?>assets/images/blog-image-2-940x460.jpg" alt="">
                 <h4><a href="blog-details.html">Mauris lobortis quam id dictum dignissim</a></h4>
                 <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet</p>
               </article>
               <article id='tabs-3'>
-                <img src="images/blog-image-3-940x460.jpg" alt="">
+                <img src="<?=base_url()?>assets/images/blog-image-3-940x460.jpg" alt="">
                 <h4><a href="blog-details.html">Class aptent taciti sociosqu ad litora torquent per</a></h4>
                 <p>Mauris lobortis quam id dictum dignissim. Donec pellentesque erat dolor, cursus dapibus turpis hendrerit quis. Suspendisse at suscipit arcu. Nulla sed erat lectus. Nulla facilisi. In sit amet neque sapien. Donec scelerisque mi at gravida efficitur. Nunc lacinia a est eu malesuada. Curabitur eleifend elit sapien, sed pulvinar orci luctus eget. 
                 </p>
@@ -198,7 +198,7 @@ his level and help him if you can. He must grow.
           <div class="row">
             <div class="col-md-6">
               <div class="left-image">
-                <img src="images/about-1-570x350.jpg" class="img-fluid" alt="">
+                <img src="<?=base_url()?>assets/images/about-1-570x350.jpg" class="img-fluid" alt="">
               </div>
             </div>
             <div class="col-md-6 align-self-center">
