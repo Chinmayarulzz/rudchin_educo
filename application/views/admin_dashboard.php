@@ -232,20 +232,20 @@ body {
 	<title>RudChin Educo</title>
 
 <!-- Bootstrap core CSS -->
-<link href="bootstrap/css/style1.css" rel="stylesheet">
+<link href="<?=base_url()?>assets/bootstrap/css/style1.css" rel="stylesheet">
 
 <!-- Additional CSS Files -->
-<link rel="stylesheet" href="bootstrap/css/style2.css">
-<link rel="stylesheet" href="bootstrap/css/style3.css">
-<link rel="stylesheet" href="bootstrap/css/owl.css">
-<link rel="stylesheet" href="fontawesome/css/brands.css">
-<link rel="stylesheet" href="fontawesome/css/brands.min.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/style2.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/style3.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/owl.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/fontawesome/css/brands.css">
+<link rel="stylesheet" href="<?=base_url()?>assets/fontawesome/css/brands.min.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?=base_url()?>assets/css/style.css">
 </head>
 
 <body>
@@ -380,10 +380,10 @@ body {
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="<?=base_url()?>assets/js/jquery.min.js"></script>
+  <script src="<?=base_url()?>assets/js/popper.js"></script>
+  <script src="<?=base_url()?>assets/js/bootstrap.min.js"></script>
+  <script src="<?=base_url()?>assets/js/main.js"></script>
 
 <script src="https://kit.fontawesome.com/b558a0dd02.js" crossorigin="anonymous"></script>
         <div class="container" style="margin:15vh;">
@@ -545,8 +545,8 @@ body {
 				</ul>
 			</section>
         </div>
-		<script type="text/javascript" src="bootstrap/jquery/jquery_min.js"></script>
-		<script type="text/javascript" src="bootstrap/js/hoverdir.js"></script>	
+		<script type="text/javascript" src="<?=base_url()?>assets/bootstrap/jquery/jquery_min.js"></script>
+		<script type="text/javascript" src="<?=base_url()?>assets/bootstrap/js/hoverdir.js"></script>	
 		<script type="text/javascript">
 			$(function() {
 			
@@ -636,14 +636,14 @@ body {
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="bootstrap/jquery/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/jquery/jquery.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Additional Scripts -->
-<script src="bootstrap/js/custom.js"></script>
-<script src="bootstrap/js/owl.js"></script>
-<script src="bootstrap/js/slick.js"></script>
-<script src="bootstrap/js/accordions.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/custom.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/owl.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/slick.js"></script>
+<script src="<?=base_url()?>assets/bootstrap/js/accordions.js"></script>
 
 <script language = "text/Javascript"> 
   cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
