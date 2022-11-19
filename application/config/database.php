@@ -75,7 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
+<<<<<<< HEAD
 	'hostname' => 'localhost:3306',
+=======
+	'hostname' => 'localhost:1234',
+>>>>>>> 5375859afbef327c78071734918a1d760126b4ac
 	'username' => 'root',
 	'password' => '',
 	'database' => 'rudchin_educo',
