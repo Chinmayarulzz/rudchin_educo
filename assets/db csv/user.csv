@@ -1,0 +1,7 @@
+id,name,email,password,mobile,location,role,approval
+1,Chinmaya,ckpatel@abc.co,12345,9988776655,Hyderabad,Admin,1
+2,Pawan,psaroj@ntpc.co,12345,9988776655,hyderabad,Admin,1
+3,Kumar,kpatel@ntpc.co,12345,9988776655,Hyderabaad,Employee,0
+4,Rudr,rpawan@ntpc.co,12345,9988776655,Hyderabad,Employee,0
+5,Patel,patel@ntpc.co,12345,9988776655,Hyderabad,Employee,0
+6,Saroj,saroj@ntpc.co,12345,9988776655,hyderabad,Employee,0

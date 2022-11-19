@@ -1,0 +1,13 @@
+id,course,course_name,link,details,thumbnail
+1,Router Configuration ,Basics of Cisco Packet Tracer,https://www.youtube.com/embed/frUQMHXhnvs,Youtube embedded video of Cisco Packet Tracer.,images/video1.png
+2,Network Configuration,CCNA,https://www.youtube.com/embed/xAgVo-fiBHI,Youtube embedded video of CCNA,images/video2.png
+3,Windows Server Administration,WIN 2019 SERVER Configuration,https://www.youtube.com/embed/1nxYJSV7-u8,Youtube embedded video of Windows Server Administration,images/video3.png
+4,Linux Server Administration,Linux Server Configuration,https://www.youtube.com/embed/WMy3OzvBWc0,Youtube embedded video of Linux Server Administration,images/video4.png
+5,AWS Cloud Computing,AWS Cloud Computing,https://www.youtube.com/embed/r4YIdn2eTm4,Youtube embedded video of AWS Cloud Computing,images/video5.png
+6,JAVA,Java Programming,https://www.youtube.com/embed/RRubcjpTkks,Youtube embedded video of Java Tutorial,images/video6.png
+7,MySQL,MySQL,https://www.youtube.com/embed/FAXhXI2Gxdc,Youtube embedded video of MySQL Tutorial,images/video7.png
+8,Python,Python Programming,https://www.youtube.com/embed/kqtD5dpn9C8,Youtube embedded video of Python Programming,images/video8.png
+9,Asp .NET,ASP .NET Programming,https://www.youtube.com/embed/fkdMdZmdBs4,Youtube embedded video of ASP .NET,images/video9.png
+10,Javascript,Javascript Programming,https://www.youtube.com/embed/W6NZfCO5SIk,Youtube embedded video of Javascript Programming,images/video10.png
+11,UI,"HTML5, CSS3, Styling packages",https://www.youtube.com/embed/PlxWf493en4,Youtube embedded video of Web UI Development,images/video11.png
+12,PHP,PHP Programming,https://www.youtube.com/watch?v=ZdP0KM49IVk,Youtube embedded video of PHP Programming,images/video12.png
