@@ -121,7 +121,7 @@
           </div>
           <div class="col-md-4">
             <div class="team-item">
-              <img src="images/team-image-1-646x680.png" alt="">
+              <img src="<?=base_url()?>assets/images/team-image-1-646x680.png" alt="">
               <div class="down-content">
                 <h4>Rudr Pawan Saroj</h4>
                 <span>Co-Founder</span>
@@ -135,7 +135,7 @@
           </div>
           <div class="col-md-4">
             <div class="team-item">
-              <img src="images/team-image-2-646x680.png" alt="">
+              <img src="<?=base_url()?>assets/images/team-image-2-646x680.png" alt="">
               <div class="down-content">
                 <h4>Chinmaya Patel</h4>
                 <span>Chief Marketing Officer</span>
@@ -148,7 +148,7 @@
           </div>
           <div class="col-md-4">
             <div class="team-item">
-              <img src="images/team-image-3-646x680.png" alt="">
+              <img src="<?=base_url()?>assets/images/team-image-3-646x680.png" alt="">
               <div class="down-content">
                 <h4>Sir Shree Kanth</h4>
                 <span>Financial Analyst</span>
