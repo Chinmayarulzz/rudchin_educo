@@ -14,7 +14,7 @@
     <title>RudChin Educo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/style1.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/bootstrap/css/style1.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?=base_url()?>assets/bootstrap/css/style2.css">
