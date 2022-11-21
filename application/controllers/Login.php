@@ -41,14 +41,15 @@ class Login extends CI_Controller {
 				if($data['approval'] == 1){
 					if($data['role'] == "Admin"){
 						$data['loggedin'] = 2;
+						$this->session->set_userdata($data);
+						redirect(base_url() . "dashboard");
 					}
 					else{
 						$data['loggedin'] = 1;
+						$this->session->set_userdata($data);
+						redirect(base_url() . "dashboard");
 					}
-					$this->session->set_userdata($data);
 				}
-                
-                redirect(base_url() . "dashboard");
             } else {
                 $this->session->set_flashdata("error", "Not a valid user. Please try again.");
                 redirect(base_url() . "login");
