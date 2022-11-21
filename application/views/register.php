@@ -233,10 +233,44 @@ body {
                 <a class="nav-link" href="<?=base_url()?>contact">Contact Us</a>
               </li>
 			  <li class="nav-item active">
-                <a class="nav-link" href="<?=base_url()?>register">Sign Up</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link active" href="<?=base_url()?>dashboard"> <?= $this->session->userdata("name") ?>
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link active" href="<?=base_url()?>register">Sign Up
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>login">Login</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>login"> Login
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>homepage">Log Out
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
             </ul>
           </div>

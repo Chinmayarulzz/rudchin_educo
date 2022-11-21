@@ -88,7 +88,7 @@ body {
 
 .form__input:focus{
   border: 2px solid #ffffff;
-  background: #a4b62d;
+  background: #00000;
   color: #a4c639;
 }
 
@@ -233,10 +233,45 @@ body {
                 <a class="nav-link" href="<?=base_url()?>contact">Contact Us</a>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>register">Sign Up</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>dashboard"> <?= $this->session->userdata("name") ?>
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>register">Sign Up
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
-			  <li class="nav-item active">
-                <a class="nav-link" href="<?=base_url()?>login">Login</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+      <li class="nav-item active">
+				<a class="nav-link active" href="<?=base_url()?>login"> Login
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+      <li class="nav-item">
+				<a class="nav-link" href="<?=base_url()?>homepage">Log Out
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
             </ul>
           </div>
@@ -246,17 +281,16 @@ body {
 
     <!-- Page Content -->
     <div class="user">
-    
-    <form class="form">
+    <form class="form" method="POST" action="">
         <div class="form__group">
-            <input type="email" placeholder="Email" class="form__input" />
+            <input type="email" name="email" placeholder="Email" class="form__input" />
         </div>
         
         <div class="form__group">
-            <input type="password" placeholder="Password" class="form__input" />
+            <input type="password" name="password" placeholder="Password" class="form__input" />
         </div>
         
-        <button class="btn" type="button">Sign In</button>
+        <button class="btn" type="submit">Sign In</button>
     </form>
 </div>
 <script> 

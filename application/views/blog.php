@@ -60,20 +60,48 @@
     
       <header class="">
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
-           <a class="navbar-brand" href="<?=base_url()?>"><h2>RudChin<em> Educo</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>">Home
-                  <span class="sr-only">(current)</span>
-                </a>
+      <div class="container">
+	<?php
+		if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+		{
+	?>
+		<a class="navbar-brand" href="<?=base_url()?>dashboard"><h2>RudChin<em> Educo</em></h2></a>
+	<?php
+		}
+		else
+		{
+	?>
+		<a class="navbar-brand" href="<?=base_url()?>"><h2>RudChin<em> Educo</em></h2></a>
+	<?php
+		}
+	?>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link active" href="<?=base_url()?>dashboard">Home
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link active" href="<?=base_url()?>">Home
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="<?=base_url()?>blog">Blog</a>
+                <a class="nav-link active" href="<?=base_url()?>blog">Blog</a>
               </li>
 
               <li class="nav-item">
@@ -87,10 +115,44 @@
                 <a class="nav-link" href="<?=base_url()?>contact">Contact Us</a>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>register">Sign Up</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>dashboard"> <?= $this->session->userdata("name") ?>
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>register">Sign Up
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>login">Login</a>
+        <?php
+				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>login"> Login
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+				else
+				{
+			?>
+				<a class="nav-link" href="<?=base_url()?>homepage">Log Out
+			  		<span class="sr-only">(current)</span>
+				</a>
+			<?php
+				}
+			?>
               </li>
             </ul>
           </div>
