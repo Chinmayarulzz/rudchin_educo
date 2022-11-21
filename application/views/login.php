@@ -232,32 +232,17 @@ body {
               <li class="nav-item">
                 <a class="nav-link" href="<?=base_url()?>contact">Contact Us</a>
               </li>
-			  <li class="nav-item">
-        <?php
-				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
-				{
-			?>
-				<a class="nav-link" href="<?=base_url()?>dashboard"> <?= $this->session->userdata("name") ?>
-			  		<span class="sr-only">(current)</span>
-				</a>
-			<?php
-				}
-				else
-				{
-			?>
+              <li>
 				<a class="nav-link" href="<?=base_url()?>register">Sign Up
 			  		<span class="sr-only">(current)</span>
 				</a>
-			<?php
-				}
-			?>
               </li>
         <?php
 				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
 				{
 			?>
       <li class="nav-item active">
-				<a class="nav-link active" href="<?=base_url()?>login"> Login
+				<a class="nav-link active" href="<?=base_url()?>login">Log Out
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php
@@ -266,7 +251,7 @@ body {
 				{
 			?>
       <li class="nav-item">
-				<a class="nav-link" href="<?=base_url()?>homepage">Log Out
+				<a class="nav-link" href="<?=base_url()?>homepage">Login
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php

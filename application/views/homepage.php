@@ -146,7 +146,7 @@
 				else
 				{
 			?>
-				<a class="nav-link" href="<?=base_url()?>homepage">Log In
+				<a class="nav-link" href="<?=base_url()?>homepage">Login
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php
