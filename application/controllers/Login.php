@@ -22,11 +22,6 @@ class Login extends CI_Controller {
 	public function __construct() {
         parent::__construct();
         $this->load->model('User_model');
-         
-        
-        // if ($this->session->userdata("loggedin") == TRUE) {
-        //     redirect(base_url() . "dashboard");
-        // }
     }
 	public function index()
 	{

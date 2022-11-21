@@ -283,7 +283,7 @@ body {
 				else
 				{
 			?>
-				<a class="nav-link" href="<?=base_url()?>homepage">Log Out
+				<a class="nav-link" href="<?=base_url()?>logout">Log Out
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php

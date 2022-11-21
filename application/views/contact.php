@@ -139,7 +139,7 @@
 				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
 				{
 			?>
-				<a class="nav-link" href="<?=base_url()?>login"> Log Out
+				<a class="nav-link" href="<?=base_url()?>logout"> Log Out
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php
@@ -147,7 +147,7 @@
 				else
 				{
 			?>
-				<a class="nav-link" href="<?=base_url()?>homepage">Login
+				<a class="nav-link" href="<?=base_url()?>login">Login
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php
