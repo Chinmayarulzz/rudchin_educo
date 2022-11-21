@@ -77,20 +77,20 @@
               </li>
 
               <li class="nav-item active">
-                <a class="nav-link" href="<?=base_url()?>about.php">About Us</a>
+                <a class="nav-link" href="<?=base_url()?>about">About Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>team.php">Authors</a>
+                <a class="nav-link" href="<?=base_url()?>team">Authors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>contact.php">Contact Us</a>
+                <a class="nav-link" href="<?=base_url()?>contact">Contact Us</a>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>register.php">Sign Up</a>
+                <a class="nav-link" href="<?=base_url()?>register">Sign Up</a>
               </li>
 			  <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>login.php">Login</a>
+                <a class="nav-link" href="<?=base_url()?>login">Login</a>
               </li>
             </ul>
           </div>
