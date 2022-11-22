@@ -81,14 +81,13 @@ body {
     text-decoration:underline #000000;
     border:1px solid #a4c639;
     
-    &:focus {
+    /* &:focus {
         background: darken(#fff, 3%);
-    }
+    } */
 }
 
 .form__input:focus{
   border: 2px solid #ffffff;
-  background: #a4b62d;
   color: #a4c639;
 }
 
@@ -266,22 +265,22 @@ body {
     <!-- Page Content -->
     <div class="user">
     
-    <form class="form">
+    <form class="form" method="POST" action="">
       <div class="form__group">
-            <input type="name" placeholder="Full Name" class="form__input" />
+            <input type="name" name="name" placeholder="Full Name" class="form__input" />
         </div>
         <div class="form__group">
-            <input type="email" placeholder="Email" class="form__input" />
+            <input type="email" name="email" placeholder="Email" class="form__input" />
         </div>
         
         <div class="form__group">
-            <input type="password" placeholder="Password" class="form__input" />
+            <input type="password" name="password" placeholder="Password" class="form__input" />
         </div>
         <div class="form__group">
-            <input type="cnfpassword" placeholder="Confirm Password" class="form__input" />
+            <input type="password" name="cnfpassword" placeholder="Confirm Password" class="form__input" />
         </div>
         
-        <button class="btn" type="button">Sign Up</button>
+        <button class="btn" type="submit">Sign Up</button>
     </form>
 </div>
 <script> 

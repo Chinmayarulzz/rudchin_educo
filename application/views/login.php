@@ -88,7 +88,6 @@ body {
 
 .form__input:focus{
   border: 2px solid #ffffff;
-  background: #00000;
   color: #a4c639;
 }
 

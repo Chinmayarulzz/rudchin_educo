@@ -18,8 +18,17 @@ class Register extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
+
+	public function __construct() {
+        parent::__construct();
+        $this->load->model('User_model');
+    }
 	public function index()
 	{
+		if ($_POST) {
+            $this->User_model->register_data();
+			redirect(base_url() . "homepage");
+		}
 		$this->load->view('register');
-	}
+	} 
 }
