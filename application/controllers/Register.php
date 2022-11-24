@@ -23,6 +23,7 @@ class Register extends CI_Controller {
         parent::__construct();
         $this->load->model('User_model');
     }
+	
 	public function index()
 	{
 		if ($_POST) {

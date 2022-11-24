@@ -33,11 +33,8 @@ class User_model extends CI_Model {
         return $query->result();
     }
     
-    
-    public function get_user_data($where = null) {
-        $this->db->where($where);
-        $query = $this->db->get("employee_details");
-        return $query->result();
+    public function viewEmployee(){
+        
     }
 
 }

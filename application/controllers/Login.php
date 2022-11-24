@@ -42,7 +42,7 @@ class Login extends CI_Controller {
 					if($data['role'] == "Admin"){
 						$data['loggedin'] = 2;
 						$this->session->set_userdata($data);
-						redirect(base_url() . "dashboard");
+						redirect(base_url() . "admin_dashboard");
 					}
 					else{
 						$data['loggedin'] = 1;
