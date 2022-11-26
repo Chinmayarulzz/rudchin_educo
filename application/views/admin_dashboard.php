@@ -398,6 +398,70 @@ tr{
 	</div>
   </nav>
 </header>
+    
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center" style="visibility:hidden;">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Employee Table</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<?php
+							$where = array('approval' => 0);
+							$this->db->where($where);
+							$query = $this->db->get("employee_details");
+							if(!empty($query->result())){
+								$users = $query->result();
+						?>
+						<table class="table table-bordered table-dark table-hover">
+						  <thead>
+						    <tr>
+						      <th>id</th>
+						      <th>Name</th>
+						      <th>email</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+							<?php
+								for($i = 0; $i < sizeof($users); $i++){
+							?>
+								<tr class="data-row">
+									<th><?= $users[$i]->id ?></th>
+									<td><?= $users[$i]->name ?></td>
+									<td><?= $users[$i]->email ?></td>
+									<td>
+										<ul>
+											<li>
+												<a class="btn" href="<?=base_url()?>admin_dashboard/approve/<?php echo $users[$i]->id?>">Approve</a>
+											</li>
+											<li>
+												<a class="btn" href="<?=base_url()?>admin_dashboard/reject/<?php echo $users[$i]->id?>">Reject</a>
+											</li>
+										</ul>
+									</td>
+								<tr>
+							<?php
+								}
+							?>
+						  </tbody>
+						</table>
+						<?php
+							}
+						?>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="<?=base_url()?>assets/js/jquery.min.js"></script>
+  <script src="<?=base_url()?>assets/js/popper.js"></script>
+  <script src="<?=base_url()?>assets/js/bootstrap.min.js"></script>
+  <script src="<?=base_url()?>assets/js/main.js"></script>
 
 <script src="https://kit.fontawesome.com/b558a0dd02.js" crossorigin="anonymous"></script>
         <div class="container" style="margin:15vh;">

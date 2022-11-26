@@ -33,4 +33,18 @@ class Admin_Dashboard extends CI_Controller {
 			$this->load->view('homepage');
 		}
 	}
+
+	public function approve($id){
+		$where = array('id'=>$id, 'approval'=>0);
+		$data = array('approval'=>1);
+		$this->db->update('employee_details', $data, $where);
+		redirect(base_url() . 'admin_dashboard');
+	}
+
+	public function reject($id){
+		$where = array('id'=>$id, 'approval'=>0);
+		$data = array('approval'=>-1);
+		$this->db->update('employee_details', $data, $where);
+		redirect(base_url() . 'admin_dashboard');
+	}
 }
