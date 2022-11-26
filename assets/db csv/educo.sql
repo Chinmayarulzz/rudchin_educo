@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 26, 2022 at 04:41 PM
+-- Generation Time: Nov 26, 2022 at 06:12 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.2.34
 
@@ -34,20 +34,21 @@ CREATE TABLE `employee_details` (
   `password` varchar(20) NOT NULL,
   `mobile` varchar(10) NOT NULL,
   `location` varchar(20) NOT NULL,
-  `role` varchar(8) NOT NULL
+  `role` varchar(8) NOT NULL,
+  `approval` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `employee_details`
 --
 
-INSERT INTO `employee_details` (`id`, `name`, `email`, `password`, `mobile`, `location`, `role`) VALUES
-(1, 'Chinmaya', 'ckpatel@abc.co', '12345', '9988776655', 'Hyderabad', 'Admin'),
-(2, 'Pawan', 'psaroj@ntpc.co', '12345', '9988776655', 'hyderabad', 'Admin'),
-(3, 'Kumar', 'kpatel@ntpc.co', '12345', '9988776655', 'Hyderabaad', 'Employee'),
-(4, 'Rudr', 'rpawan@ntpc.co', '12345', '9988776655', 'Hyderabad', 'Employee'),
-(5, 'Patel', 'patel@ntpc.co', '12345', '9988776655', 'Hyderabad', 'Employee'),
-(6, 'Saroj', 'saroj@ntpc.co', '12345', '9988776655', 'hyderabad', 'Employee');
+INSERT INTO `employee_details` (`id`, `name`, `email`, `password`, `mobile`, `location`, `role`, `approval`) VALUES
+(1, 'Chinmaya', 'ckpatel@abc.co', '12345', '9988776655', 'Hyderabad', 'Admin', 1),
+(2, 'Pawan', 'psaroj@ntpc.co', '12345', '9988776655', 'hyderabad', 'Admin', 1),
+(3, 'Kumar', 'kpatel@ntpc.co', '12345', '9988776655', 'Hyderabaad', 'Employee', -1),
+(4, 'Rudr', 'rpawan@ntpc.co', '12345', '9988776655', 'Hyderabad', 'Employee', -1),
+(5, 'Patel', 'patel@ntpc.co', '12345', '9988776655', 'Hyderabad', 'Employee', -1),
+(6, 'Saroj', 'saroj@ntpc.co', '12345', '9988776655', 'hyderabad', 'Employee', 1);
 
 -- --------------------------------------------------------
 
