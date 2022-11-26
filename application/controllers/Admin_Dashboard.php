@@ -26,6 +26,11 @@ class Admin_Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('admin_dashboard');
+		if($this->session->userdata("loggedin") == 2){
+			$this->load->view('admin_dashboard');
+		}
+		else{
+			$this->load->view('homepage');
+		}
 	}
 }
