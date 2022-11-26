@@ -5,8 +5,7 @@
 		<meta charset="UTF-8" />
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Direction-Aware Hover Effect with CSS3 and jQuery</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="Direction-Aware Hover Effect with CSS3 and jQuery" />
         <meta name="keywords" content="hover, css3, jquery, effect, direction, aware, depending, thumbnails" />
@@ -226,6 +225,16 @@ body {
 	padding: 1px;
 }
 
+tr{
+	text-align: center;
+}
+
+.data-cell{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
 </style>
     </head>
     <body>
@@ -405,44 +414,47 @@ body {
 						  <thead>
 						    <tr>
 						      <th>id</th>
-						      <th>email</th>
 						      <th>Name</th>
-						      <th>Approve/Reject</th>
+						      <th>email</th>
 						    </tr>
 						  </thead>
 						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td>Mark</td>
-						      <td>Otto</td>
-						      <td>markotto@email.com</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">2</th>
-						      <td>Jacob</td>
-						      <td>Thornton</td>
-						      <td>jacobthornton@email.com</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">3</th>
-						      <td>Larry</td>
-						      <td>the Bird</td>
-						      <td>larrybird@email.com</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">4</th>
-						      <td>John</td>
-						      <td>Doe</td>
-						      <td>johndoe@email.com</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">5</th>
-						      <td>Gary</td>
-						      <td>Bird</td>
-						      <td>garybird@email.com</td>
-						    </tr>
+							<?php
+								$where = array('approval' => 0);
+								$this->db->where($where);
+								$query = $this->db->get("employee_details");
+								$users = $query->result();
+								for($i = 0; $i < sizeof($users); $i++){
+									$id = $users[$i]->id;
+									$name = $users[$i]->name;
+									$email = $users[$i]->email;
+							?>
+								<tr class="data-row">
+									<th><?= $id ?></th>
+									<td><?= $name ?></td>
+									<td><?= $email ?></td>
+								<tr>
+							<?php
+								}
+							?>
 						  </tbody>
 						</table>
+						<ul>
+							<li><button class="btn" onclick="<?php
+								$where = array('approval' => 0);
+								$update_data = array('approval' => 1);
+								if($this->db->update('employee_details', $update_data, $where)){
+									redirect(base_url() . 'admin_dashboard');
+								}
+							?>">Approve All</button></li>
+							<li><button class="btn" onclick="<?php
+								$where = array('approval' => 0);
+								$update_data = array('approval' => -1);
+								if($this->db->update('employee_details', $update_data, $where)){
+									redirect(base_url() . 'admin_dashboard');
+								}
+							?>">Reject All</button></li>	
+						</ul>								
 					</div>
 				</div>
 			</div>
