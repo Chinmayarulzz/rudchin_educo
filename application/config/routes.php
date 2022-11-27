@@ -55,5 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['(admin_dashboard/approve/:id)'] = 'admin_dashboard/approve';
 $route['(admin_dashboard/reject/:id)'] = 'admin_dashboard/reject';
 $route['(video_course/player/:id)'] = 'video_course/player';
-$route['(video/edit/:id'] = 'video/edit';
-$route['(video/delete/:id'] = 'video/delete';
+$route['(video/edit/:id)'] = 'video/edit';
+$route['(video/delete/:id)'] = 'video/delete';
