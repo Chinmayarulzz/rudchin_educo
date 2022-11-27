@@ -20,6 +20,25 @@ class Video_course extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('video_course');
+		$this->load->view('dashboard');
 	}
+
+	public function player($id){
+		if($id){
+			$where = array('id'=>$id);
+			$this->db->where($where);
+			$video = $this->db->get('links')->result();
+			$data = array(
+				'course'=>$video[0]->course,
+				'course_name'=>$video[0]->course_name,
+				'link'=>$video[0]->link,
+				'details'=>$video[0]->details
+			);
+			$this->load->view('video_course', $data);
+		}
+		else{
+			$this->load->view('dashboard');
+		}
+	}
+
 }

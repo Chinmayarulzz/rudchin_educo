@@ -159,14 +159,16 @@ body {
 
 .video-container{
     display:flex;
-    justify-content: space-around;
-    height: 82vh;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
     margin-top: 10vh;
     width: 100%;
 }
 
 .video-container iframe{
     width: 80%;
+    height: 800px;
     border: 0;
 }
 
@@ -174,6 +176,31 @@ body {
     border: 1px dotted #a4c639;
     color: #a4c639;
 }
+
+.course-name, .course, .details{
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #a4c639;
+}
+
+.course-name{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.course{
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 90%;
+}
+
+.details{
+  opacity: 80%;
+  font-size: 90%;
+}
+
     </style>
     <title>RudChin Educo</title>
 
@@ -327,7 +354,10 @@ body {
     <!-- Page Content -->
     
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/h9X3R_y1Y94"></iframe>
+        <iframe src="<?php echo $link ?>"></iframe>
+        <div class="course-name"><?php echo $course_name ?></div>
+        <div class="course"><?php echo $course ?></div>
+        <div class="details"><?php echo $details ?></div>
     </div>
 
     <!-- Footer Starts Here -->

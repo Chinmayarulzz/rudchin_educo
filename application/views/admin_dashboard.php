@@ -168,19 +168,21 @@ body {
         background-position: 0 0
     }
 }
-.container ul{
+
+.da-thumbs{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	width: 80vw;
 }
 
-.container ul li{
+.da-thumbs li{
 	padding: 10px;
 }
 
-.container ul li a div{
+.da-thumbs li a div{
 	width: 13vw;
-}
+} 
 
 .sub-header .container .row{
 	display: flex;
@@ -223,6 +225,8 @@ body {
 .btn-add{
 	margin: 1px;
 	padding: 1px;
+	width: 60vw;
+	margin-left: 10vw;
 }
 
 tr{
@@ -233,6 +237,35 @@ tr{
 	position: absolute;
 	top: 50%;
 	left: 50%;
+}
+
+.da-thumbs li a img{
+	width: 18vw;
+	height: 18vh;
+}
+
+.course_name{
+	font-size: 18px;
+	width: 100%;
+}
+
+.course{
+	font-size: 14px;
+	width: 100%;
+}
+
+.no-requests{
+	font-size: 26px;
+	color:#a4c639;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	outline: 1px solid red;
 }
 
 </style>
@@ -451,6 +484,13 @@ tr{
 						</table>
 						<?php
 							}
+							else{
+						?>
+							<div class="no-requests">
+								<strong>No Requests to Approve</strong>
+							</div>
+						<?php
+							}
 						?>					
 					</div>
 				</div>
@@ -489,137 +529,30 @@ tr{
 			<section>
 				<button class="btn btn-add">ADD COURSE</button>
 				<ul id="da-thumbs" class="da-thumbs">
-					<li>
-						<a href="http://dribbble.com/shots/505046-Menu">
-							<img src="<?=base_url()?>assets/images/video1.png" />
-							<div><span>Menu by Simon Jensen</span></div>
-							<div class="btns" style="display:flex;">
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/504336-TN-Aquarium">
-							<img src="<?=base_url()?>assets/images/video2.png" />
-							<div><span>TN Aquarium by Charlie Gann</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/504197-Mr-Crabs">
-							<img src="<?=base_url()?>assets/images/video3.png" />
-							<div><span>Mr. Crabs by John Generalov</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-							<img src="<?=base_url()?>assets/images/video4.png" />
-							<div><span>Gallery of Mo 2.Mo logo by Adam Campion</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>	
-						<a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
-							<img src="<?=base_url()?>assets/images/video5.png" />
-							<div><span>Ice Cream - nom nom by Eight Hour Day</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/502927-My-Muse">
-							<img src="<?=base_url()?>assets/images/video6.png" />
-							<div><span>My Muse by Zachary Horst</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/502538-Natalie-Justin-Cleaning">
-							<img src="<?=base_url()?>assets/images/video7.png" />
-							<div><span>Natalie & Justin Cleaning by Justin Younger</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/502523-App-Preview">
-							<img src="<?=base_url()?>assets/images/video8.png" />
-							<div><span>App Preview by Ryan Deshler</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/501695-Cornwall-Map">
-							<img src="<?=base_url()?>assets/images/video9.png" />
-							<div><span>Cornwall Map by Katharina Maria Zimmermann</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/500861-final-AD-logo">
-							<img src="<?=base_url()?>assets/images/video10.png" />
-							<div><span>final AD logo by Annette Diana</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/500369-Land-Those-Planes">
-							<img src="<?=base_url()?>assets/images/video11.png" />
-							<div><span>Land Those Planes by Lee Ann Marcel</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="http://dribbble.com/shots/497795-Seahorse">
-							<img src="<?=base_url()?>assets/images/video12.png" />
-							<div><span>Seahorse by Trevor Basset</span></div>
-							<div class="btns" style="display:flex;">
-								
-								<button class="btn btn-edit">EDIT</button>
-								<button class="btn btn-del">DELETE</button>
-							</div>
-						</a>
-					</li>
+				<?php
+						$videos = $this->db->get('links')->result();
+						for($i=0; $i<sizeof($videos); $i++){
+					?>
+						<li>
+							<div class="thumbnail-container">
+							<a href="<?=base_url()?>video_course/player/<?php echo $videos[$i]->id ?>">
+								<img src="<?=base_url()?>assets/<?php echo $videos[$i]->thumbnail ?>" class="video-thumbnail" />
+								<div class="course"><span><?php echo $videos[$i]->course ?></span></div>
+								<div class="course-name"><span><?php echo $videos[$i]->course_name ?></span></div>
+								<!-- <div class="buttons"> -->
+									<a href="<?=base_url()?>video/edit/<?php echo $videos[$i]->id ?>">
+										<button type="button" class="btn btn-edit">EDIT</button>
+									</a>
+									<a href="<?=base_url()?>video/delete/<?php echo $videos[$i]->id ?>">
+										<button type="button" class="btn btn-del">DELETE</button>
+									</a>
+								<!-- </div> -->
+							</a>
+						</div>
+						</li>
+					<?php
+						}
+					?>
 				</ul>
 			</section>
         </div>
