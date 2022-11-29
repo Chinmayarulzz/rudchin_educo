@@ -25,6 +25,7 @@ class Video extends CI_Controller {
 
     public function edit($id){
         if($id){
+            $this->db->where(array('id'=>$id));
             $db_data = $this->db->get('links')->result();
             $data = array(
                 'id'=>$db_data[0]->id,

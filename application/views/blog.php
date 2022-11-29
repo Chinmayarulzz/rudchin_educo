@@ -61,13 +61,18 @@
       <header class="">
       <nav class="navbar navbar-expand-lg">
       <div class="container">
-	<?php
-		if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+      <?php
+		if($this->session->userdata("loggedin") == 1)
 		{
 	?>
 		<a class="navbar-brand" href="<?=base_url()?>dashboard"><h2>RudChin<em> Educo</em></h2></a>
 	<?php
 		}
+    elseif($this->session->userdata("loggedin") == 2){
+  ?>
+    <a class="navbar-brand" href="<?=base_url()?>admin_dashboard"><h2>RudChin<em> Educo</em></h2></a>
+  <?php
+    }
 		else
 		{
 	?>
@@ -88,14 +93,14 @@
 				<a class="nav-link" href="<?=base_url()?>dashboard">Home
 			  		<span class="sr-only">(current)</span>
 				</a>
-			<?php
+      <?php
         }
-      else if($this->session->userdata("loggedin") == 2){
-        ?>
+        elseif($this->session->userdata("loggedin") == 2){
+      ?>
         <a class="nav-link" href="<?=base_url()?>admin_dashboard">Home
 			  		<span class="sr-only">(current)</span>
 				</a>
-        <?php
+			<?php
 				}
 				else
 				{

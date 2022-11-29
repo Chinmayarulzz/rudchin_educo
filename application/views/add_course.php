@@ -280,18 +280,10 @@ body {
 		  </li>
 		  <li class="nav-item">
 			<?php
-				if($this->session->userdata("loggedin") == 1)
+				if($this->session->userdata("loggedin") == 2)
 				{
 			?>
-				<a class="nav-link active" href="<?=base_url()?>dashboard"> <?= $this->session->userdata("name") ?>
-			  		<span class="sr-only">(current)</span>
-				</a>
-			<?php
-				}
-        else if($this->session->userdata("loggedin") == 2)
-        {
-      ?>
-        <a class="nav-link active" href="<?=base_url()?>admin_dashboard"> <?= $this->session->userdata("name") ?>
+				<a class="nav-link active" href="<?=base_url()?>admin_dashboard"> <?= $this->session->userdata("name") ?>
 			  		<span class="sr-only">(current)</span>
 				</a>
       <?php
@@ -308,7 +300,7 @@ body {
 		  </li>
 		  <li class="nav-item">
 			<?php
-				if($this->session->userdata("loggedin") == 1 || $this->session->userdata("loggedin") == 2)
+				if($this->session->userdata("loggedin") == 2)
 				{
 			?>
 				<a class="nav-link" href="<?=base_url()?>logout"> Log Out
