@@ -130,7 +130,8 @@
 			  		<span class="sr-only">(current)</span>
 				</a>
 			<?php
-      else if($this->session->userdata("loggedin") == 2){
+        }
+      elseif($this->session->userdata("loggedin") == 2){
         ?>
         <a class="nav-link" href="<?=base_url()?>admin_dashboard"> <?= $this->session->userdata("name") ?>
 			  		<span class="sr-only">(current)</span>

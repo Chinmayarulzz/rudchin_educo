@@ -268,6 +268,10 @@ tr{
 	outline: 1px solid red;
 }
 
+.data-row th, .data-row td{
+	width: 25%;
+}
+
 </style>
     </head>
     <body>
@@ -456,6 +460,7 @@ tr{
 						      <th>id</th>
 						      <th>Name</th>
 						      <th>email</th>
+							  <th>Approve/Reject</th>
 						    </tr>
 						  </thead>
 						  <tbody>
@@ -467,7 +472,7 @@ tr{
 									<td><?= $users[$i]->name ?></td>
 									<td><?= $users[$i]->email ?></td>
 									<td>
-										<ul>
+										<ul style="display:flex;justify-content:space-between;">
 											<li>
 												<a class="btn" href="<?=base_url()?>admin_dashboard/approve/<?php echo $users[$i]->id?>">Approve</a>
 											</li>
@@ -527,7 +532,9 @@ tr{
 				<p>Here we use the inverse direction.</p>
 			</header>
 			<section>
-				<button class="btn btn-add">ADD COURSE</button>
+				<a href="<?=base_url()?>video/add">
+					<button class="btn btn-add">ADD COURSE</button>
+				</a>
 				<ul id="da-thumbs" class="da-thumbs">
 				<?php
 						$videos = $this->db->get('links')->result();
